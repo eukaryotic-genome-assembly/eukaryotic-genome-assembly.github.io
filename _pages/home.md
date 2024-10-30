@@ -5,7 +5,7 @@ permalink: /
 
 ![](/images/other/home_sloth.jpg)
 
-Welcome to the [Physalia](https://www.physalia-courses.org/) October 2023 course run by Marcela Uliano & João Ferreira.
+Welcome to the [Physalia](https://www.physalia-courses.org/) November 2024 course run by Marcela Uliano-Silva & João Ferreira.
 
 Follow the links on the lefthand side to take part in the course modules.
 

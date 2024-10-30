@@ -3,7 +3,9 @@ title: "References"
 layout: archive
 permalink: /further_reading/
 ---
-
+# Review on genome assembly with Long Reads
+* 2024 review - [https://www.nature.com/articles/s41576-024-00718-w](https://www.nature.com/articles/s41576-024-00718-w)
+* Vertebrate Genomes Project CLR assemblies - [https://www.nature.com/articles/s41586-021-03451-0](https://www.nature.com/articles/s41586-021-03451-0) 
 
 # Historical
 
@@ -28,6 +30,7 @@ First human genome
 
 # Kmer analysis
 
+* Review on kmer analysis [https://arxiv.org/abs/2404.01519](https://arxiv.org/abs/2404.01519) 
 * Merqury [https://genomebiology.biomedcentral.com/articles/10.1186/s13059-020-02134-](https://genomebiology.biomedcentral.com/articles/10.1186/s13059-020-02134-9)
 * KAT [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5408915/pdf/btw663.pdf](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5408915/pdf/btw663.pdf)
 * Genomescope [https://www.nature.com/articles/s41467-020-14998-3](https://www.nature.com/articles/s41467-020-14998-3) 
@@ -62,3 +65,10 @@ First human genome
 
 * Grit Team video on Pretext and Hi-C [Video](https://youtu.be/3IL2Q4f3k3I) 
 * Hi-C for Dummies [Slides](/pdf/HiC_Dummies_Guide.pdf)
+
+# Pipelines for genome assembly
+
+* Pipeasm - [https://www.biorxiv.org/content/10.1101/2024.10.21.598381v1](https://www.biorxiv.org/content/10.1101/2024.10.21.598381v1) 
+* Colora - [https://www.biorxiv.org/content/10.1101/2024.09.10.612003v1](https://www.biorxiv.org/content/10.1101/2024.09.10.612003v1)
+* Galaxy VGP Pipeline - [https://www.nature.com/articles/s41587-023-02100-3](https://www.nature.com/articles/s41587-023-02100-3)
+

@@ -33,8 +33,6 @@ pages:
         url: /igv_installation/ 
       - title: "- Installing PretextView" 
         url: /pretextView_installation/
-      - title: "- Setting up conda" 
-        url: /conda_setup/
         
   - title: "Hands On"
     children:

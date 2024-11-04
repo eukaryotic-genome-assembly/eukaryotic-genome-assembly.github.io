@@ -56,21 +56,17 @@ Each species data will have a code on its name representing each of the 4 specie
 
 Keep these codes in mind as the files will most likely to be named after them.
 
-Now you need to set up `conda` for your user. Follow [this tutorial](https://eukaryotic-genome-assembly.github.io/conda_setup/) to do that. 
+Now you need to activate our main `conda` environment. To do that you need to run: 
 
-Now that you have the reads in place and conda set up, double check that the conda environment `eukaryotic_genome_assembly` is active. Your prompt should look like:  
+```
+conda activate eukaryotic_genome_assembly
+``` 
+
+Your prompt should now look like:  
 
 ```bash  
 (eukaryotic_genome_assembly) userX@IP-address:working_directory$
 ```
-
-If your prompt looks like: 
-
-```bash  
-(base) userX@IP-address:working_directory$
-```
-
-you just need to run `conda activate eukaryotic_genome_assembly`. Otherwise (i.e. if there is neither `(base)` nor `(eukaryotic_genome_assembly)`, then you probably haven't set up conda properly. Go back to the tutorial or ask for João's help.
  
 With the `eukaryotic_genome_assembly`environment active, try calling Jellyfish:
 

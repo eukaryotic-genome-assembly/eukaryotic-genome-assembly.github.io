@@ -133,7 +133,7 @@ Inside the shared directory for your species (`/home/ubuntu/Share/<species-Code>
 <species>.total.histo
 ```
 
-Download the file \<species\>.total.histo to your local machine (if you need help for that, we have instructions on downloading/uploading files in [this](https://eukaryotic-genome-assembly.github.io/logging_on/) tutorial), go to the [Genomescope](http://qb.cshl.edu/genomescope/) page and upload the file there. You should change the **Description** to the name of your species, and the **kmer** to 31. Then plot. People working with drUrtUren1 also need to set the kmer max count to 10000.
+Download the file \<species\>.total.histo to your local machine (if you need help for that, we have instructions on downloading/uploading files in [this](https://eukaryotic-genome-assembly.github.io/logging_on/) tutorial), go to the [Genomescope](http://genomescope.org/genomescope2.0/) page and upload the file there. You should change the **Description** to the name of your species, and the **kmer** to 31. Then plot.
 
 Save the image of both versions of the plot - normal and log scale - somewhere in your computer.
 
@@ -201,7 +201,7 @@ d- Taking into consideration the estimated genome size, and the statistics of th
 
 I want you to go back to the *.histo* file you have generated today (for your subsample), download it to your local machine and plot it on genomescope. Also, I want you to run asmstats on the fasta file (the 600 subset) you imputed to jellyfish. 
 
-e- What genomescope tells you when you try to plot a kmer histogram for just a handful of sequences? 
+e- How do the observed and model curves compare now that we are analysing just a handful of sequences? How about the Model Fit values? 
 
 f- Looking at the asmstats result for this smaller file, how much coverage of the genome you have in this file giving the estimated genome size?
 

@@ -30,7 +30,8 @@ First human genome
 
 # Kmer analysis
 
-* Review on kmer analysis [https://arxiv.org/abs/2404.01519](https://arxiv.org/abs/2404.01519) 
+* Review on kmer analysis [https://arxiv.org/abs/2404.01519](https://arxiv.org/abs/2404.01519)
+* Build a Meryl database [https://github.com/marbl/merqury/wiki/1.-Prepare-meryl-dbs](https://github.com/marbl/merqury/wiki/1.-Prepare-meryl-dbs)   
 * Merqury [https://genomebiology.biomedcentral.com/articles/10.1186/s13059-020-02134-](https://genomebiology.biomedcentral.com/articles/10.1186/s13059-020-02134-9)
 * KAT [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5408915/pdf/btw663.pdf](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5408915/pdf/btw663.pdf)
 * Genomescope [https://www.nature.com/articles/s41467-020-14998-3](https://www.nature.com/articles/s41467-020-14998-3) 
@@ -51,6 +52,7 @@ First human genome
 * Purge Haplotigs [https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-018-2485-7](https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-018-2485-7)
 * Purge Dups [https://academic.oup.com/bioinformatics/article/36/9/2896/5714742](https://academic.oup.com/bioinformatics/article/36/9/2896/5714742)
 * Widespread false gene gains caused by duplication errors in genome assemblies [https://genomebiology.biomedcentral.com/articles/10.1186/s13059-022-02764-1](https://genomebiology.biomedcentral.com/articles/10.1186/s13059-022-02764-1)
+
 # Hi-C
 
 * Hi-C is invented [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2858594/pdf/nihms-194459.pdf](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2858594/pdf/nihms-194459.pdf)

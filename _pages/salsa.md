@@ -12,7 +12,7 @@ Right, so now you have learned about Chromosome conformation capture and scaffol
 First you need to activate our SALSA environment:
 
 ```console
-conda activate salsa_env  
+conda activate salsa  
 ```
 
 Then run:

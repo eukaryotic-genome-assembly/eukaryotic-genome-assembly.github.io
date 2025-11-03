@@ -30,7 +30,8 @@ First human genome
 
 # Kmer analysis
 
-* Review on kmer analysis [https://arxiv.org/abs/2404.01519](https://arxiv.org/abs/2404.01519)
+* Review on kmer analysis [Genome Research 2025](https://pmc.ncbi.nlm.nih.gov/articles/PMC11874746/)
+* FASTK [https://github.com/thegenemyers/FASTK](https://github.com/thegenemyers/FASTK) 
 * Build a Meryl database [https://github.com/marbl/merqury/wiki/1.-Prepare-meryl-dbs](https://github.com/marbl/merqury/wiki/1.-Prepare-meryl-dbs)   
 * Merqury [https://genomebiology.biomedcentral.com/articles/10.1186/s13059-020-02134-](https://genomebiology.biomedcentral.com/articles/10.1186/s13059-020-02134-9)
 * KAT [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5408915/pdf/btw663.pdf](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5408915/pdf/btw663.pdf)

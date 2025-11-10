@@ -16,7 +16,12 @@ So let’s plot the size distribution of our <species>.total.fasta file using a 
 cp /home/ubuntu/Share/scripts/plot_fasta_length.py .
 ```
 
-Now we can run the script:
+Then, activate the conda environment that contains the python packages required for the script:  
+```bash
+conda activate fasta_plot_env
+```
+
+Now we can finally run the script:
 
 ```console  
 python plot_fasta_length.py <species>.ccs.total.fasta.gz <species>.ccs.total.fasta.length.png

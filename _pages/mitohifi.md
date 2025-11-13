@@ -20,25 +20,31 @@ mkdir ~/mitohifi_test_01/
 cd ~/mitohifi_test_01/  
 ```
 
-After that, activate the `mitohifi_env` conda environment created in advance by your instructors that contains some dependencies needed to run MitoHiFi:  
+After that, you'll need to create a symlink to the singularity image that we'll use for running mitohifi: 
+```console
+ln -s /home/ubuntu/Share/singularity-images/mitohifi.sif
+```
 
-```console 
-conda activate mitohifi_env  
+**Singularity images are standalone container files.**  
+They contain an entire software environment inside a single `.sif` file — including all the programs, libraries and dependencies needed to run a pipeline. This means you do not need to install MitoHiFi or worry about environments: everything is already packaged inside the image.
+
+PS: when you are back to your own computer/server, you can download the up-to-date mitohifi image file with the command:
+```console
+singularity pull mitohifi.sif docker://ghcr.io/marcelauliano/mitohifi:master
+``` 
+
+This command will download the complete MitoHiFi container from the internet and save it locally as a single `.sif` file, and you only need to run it once. Then, every time you need to run mitohifi, all you need to do is target that file:  
+```console   
+singularity exec /path/to/local/mitohifi.sif mitohifi.py -h
 ```
 
 ## Finding a related mitogenome  
 To run MitoHiFi, first you need a close-related mitochondria in fasta and genbank format. We have a script that can help you find this input. Giving the name of the species you are assembling, the script is going to look for the closest mitochondria it can find on NCBI. You can give the parameter `-s` to the script if you would like to restrict your mitochondria search for species within your given genus, but this means the script can download partial mitochondrial sequences. Otherwise, without `-s`, the script is going to search for complete mitochondrias only and as close as possible to your species on interest.
 
-Before running the script, you need to export MitoHiFi's directory to the PATH environment variable: 
+We'll need to mitohifi.sif file to run this script:
 
 ```console  
-export PATH=$PATH:/home/ubuntu/Share/softwares/MitoHiFi/src/
-```
-
-Now you are ready to run the script to find the related mitogenome:
-
-```console  
-findMitoReference.py --species "Phalera bucephala" --email <your_email> --outfolder refData --min_length 15000
+singularity exec mitohifi.sif findMitoReference.py --species "Phalera bucephala" --email <your_email> --outfolder refData --min_length 15000
 ```
 
 Where `<your_email>` should be replaced by your email (your personal/work email should work just fine)
@@ -48,31 +54,17 @@ This command will output a fasta (OQ830676.1.fasta) and a genbank (OQ830676.1.gb
 
 ## Running MitoHiFi
 
-Now let's run MitoHiFi using an example dataset. Before that, we need to add MitoFinder (which is used by MitoHiFi to do the annotation step) to your PATH:
-
-```console
-export PATH=$PATH:/home/ubuntu/Share/softwares/MitoFinder/  
-```
-
-(Optional) You can test if `mitofinder` has been successfully added to your PATH by running the following command and checking if it returns a help message explaining how the mitofinder program is supposed to be run:  
-
-```console
-mitofinder -h
-```
-
-Now you need to create a symlink to the mitohifi script:  
+Now let's run MitoHiFi using an example dataset. First, you may want to check the general syntax for running MitoHiFi, as well as all options that this pipeline provides:
 
 ```console  
-ln -s /home/ubuntu/Share/softwares/MitoHiFi/src/mitohifi.py  
+singularity exec mitohifi.sif mitohifi.py -h
 ```
 
-(Optional) You can test if mitohifi has been successfully set by running the help command:  
+PS: it may be confusing, but notice that we have two 'mitohifi' in the previous command:  
+i) `mitohifi.sif` is the Singularity image, which contains the full software environment;  
+ii) `mitohifi.py` is the actual MitoHiFi program, which runs inside the Singularity container.
 
-```console  
-python mitohifi.py -h
-```  
-
-Copy the the `test.fa` file to your current directory. The `test.fa` is a multifasta file that contains 3 assembled contigs. It's been generated in advance by your instructors. 
+Now, copy the the `test.fa` file to your current directory. The `test.fa` is a multifasta file that contains 3 assembled contigs. It's been generated in advance by your instructors. 
 
 PS: of course in the real world you assembly file will have a much higher number of contigs, but here we are working with a limited number for computational and time constraints.
 
@@ -83,7 +75,7 @@ cp /home/ubuntu/Share/MitoHiFi_data/test.fa .
 Finally, run MitoHiFi for the contigs test dataset: 
 
 ```console  
-python mitohifi.py -c test.fa -f refData/OQ830676.1.fasta -g refData/OQ830676.1.gb -t 1 -o 5
+singularity exec mitohifi.sif mitohifi.py -c test.fa -f refData/OQ830676.1.fasta -g refData/OQ830676.1.gb -t 1 -o 5
 ```
 
 The pipeline will probably take a few minutes to run. Once it's done, it will output a message saying `Pipeline finished!`.

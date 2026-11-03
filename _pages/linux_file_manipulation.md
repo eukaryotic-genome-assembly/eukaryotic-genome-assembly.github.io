@@ -16,7 +16,7 @@ Do not worry: later on in this tutorial you will learn how to put data into the 
 ## Copying a file <a name="copying-a-file"></a>  
 There are several reasons why you may want to copy a file, for instance when you want to create a backup before modifying the original copy. The command to create copies is **cp**. It takes two arguments: the first one is the file to be copied (i.e. the source) and the second is the destination. 
 
-The destination is a path to either a file or a directory. If destination is a directory, then the **cp** command will create a copy of the source file in the destination directory and keep the original filename of the source file:  
+The destination is a path to either a file or a directory. If the destination is a directory, then the **cp** command will create a copy of the source file in the destination directory and keep the original filename of the source file:  
 ```console  
 username@bash:~$ cp empty_file linux_tutorial 
 username@bash:~$ ls linux_tutorial  
@@ -40,7 +40,7 @@ empty_file empty_file_backup linux_tutorial_subdirectory
 ```  
 
 ## Moving files and directories <a name="moving-files-and-directories"></a>  
-The command to move a file or directory from one directory to another is **mv** (which stands for *Move*).**mv** works in similar way as **cp**, where the first argument is the source and the second one is the destination. One advantage of **mv** over **cp** is that **mv** do not need the option *-r* to move directories, so the command is actually the same either you want to move a file or a directory:  
+The command to move a file or directory from one directory to another is **mv** (which stands for *Move*).**mv** works in a similar way as **cp**, where the first argument is the source and the second one is the destination. One advantage of **mv** over **cp** is that **mv** does not need the option *-r* to move directories, so the command is actually the same whether you want to move a file or a directory:  
 ```console  
 username@bash:~$ mkdir empty_directory
 username@bash:~$ mv linux_tutorial/empty_file empty_directory
@@ -91,4 +91,4 @@ empty_directory_renamed empty_file linux_tutorial
 ``` 
 
 ### Attention:exclamation: 
-Since Linux command line does **not** have an **undo** option, be **careful** when performing **destructive** actions. 
+Since the Linux command line does **not** have an **undo** option, be **careful** when performing **destructive** actions. 

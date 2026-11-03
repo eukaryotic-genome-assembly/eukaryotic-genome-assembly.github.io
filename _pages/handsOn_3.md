@@ -25,7 +25,7 @@ blastn -h
 ```  
 
 Has `blastn` returned some USAGE information with a list of accepted parameters? If yes, great.
-Next thing will be to make sure you are in your assembly directory, which can be either the hifiasm or canu:
+The next thing will be to make sure you are in your assembly directory, which can be either the hifiasm or canu:
 
 ```console
 cd ~/<species_folder>/<hifiasm>/
@@ -46,7 +46,7 @@ Now, list your directory. Have a look. Do you see different files with the datab
 ls -ltrh
 ```  
 
-Now that we have formated our database, let’s run blast. Blast has many parameters. We are going to run it twice to produce two types of output files. First run to generate a standard output:
+Now that we have formatted our database, let’s run blast. Blast has many parameters. We are going to run it twice to produce two types of output files. First run to generate a standard output:
 
 ```console  
 blastn -query <contigs_fasta> -db database.fasta -out <contigs_fasta>.DB.blastn -evalue 1e-05
@@ -60,7 +60,7 @@ Now run it with an output format 6:
 blastn -query <contigs_fasta> -db database.fasta -out <contigs_fasta>.DB.blastn6 -evalue 1e-05 -outfmt 6
 ```
 
-The command above will tell you the accession number of the subject sequences (i.e. the sequences in the database), then you can check on NCBI what those sequences are. Alternatively, you may change the `blastn` command to direcly print the title of the subject sequences in the output file (by replacing `-outfmt 6` by `-outfmt "6 std stitle"`):  
+The command above will tell you the accession number of the subject sequences (i.e. the sequences in the database), then you can check on NCBI what those sequences are. Alternatively, you may change the `blastn` command to directly print the title of the subject sequences in the output file (by replacing `-outfmt 6` by `-outfmt "6 std stitle"`):  
 
 ```
 blastn -query <contigs_fasta> -db database.fasta -out <contigs_fasta>.DB.blastn6_2 -evalue 1e-05 -outfmt "6 std stitle"
@@ -68,7 +68,7 @@ blastn -query <contigs_fasta> -db database.fasta -out <contigs_fasta>.DB.blastn6
 
 ### Attention :grey_exclamation: 
 
-The blast database files and the contigs must be in the same folder. If they aren’t you have some options: (i) you can specify the path to the target files, (ii) you can copy files (assembly or database) to the same folder, (ii) you can symlink files. If you get stuck let us know.
+The blast database files and the contigs must be in the same folder. If they aren’t you have some options: (i) you can specify the path to the target files, (ii) you can copy files (assembly or database) to the same folder, (iii) you can symlink files. If you get stuck, let us know.
 
 # Good! 
 
@@ -78,8 +78,8 @@ So now let’s have a look at our outputs!
 
 2-) Let’s inspect the differences between the two outputs
 
-3-) What each column on the output `<contigs_fasta>.DB.blastn6` mean?  
+3-) What does each column on the output `<contigs_fasta>.DB.blastn6` mean?  
     Here you can either google it or (even better) run `blastn -help` to see what the default columns for the `-outfmt` are. By exploring the `blast -help` output you can even discover some non-default options that you may find interesting to include in your future blast alignments outputs. 
 
-Discuss this with your colleages and then let's discuss this as a group!
+Discuss this with your colleagues and then let's discuss this as a group!
 

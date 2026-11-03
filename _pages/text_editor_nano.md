@@ -30,7 +30,7 @@ You can play around and add any text you want to:
 ![](/images/nano_02.PNG) 
 
 ### Saving the changes  
-To save the changes that you have made to the file, use the shortcut `Ctrl`+`O` (always lower case!). Nano will ask the name you want to give to the modified version of the file. If you want to keep the original file name, just press `Enter`.  
+To save the changes that you have made to the file, use the shortcut `Ctrl`+`O` (always lower case!). Nano will ask for the name you want to give to the modified version of the file. If you want to keep the original file name, just press `Enter`.  
 ![](/images/nano_03.PNG)  
 
 After saving the modified version, Nano will return to the first page. If you want to leave Nano, you need to use the shortcut `Ctrl`+`X`. If any modifications have been done between the last save action and the moment you try to leave Nano, it will ask you if you want to save the modifications into a new file:  
@@ -41,10 +41,10 @@ There are some shortcuts that can significantly speed up the process of navigati
 
 |Shortcut|Effect|
 |---|---|
-|Ctrl+A|Moves to the begin of current line|
-|Ctrl+E|Moves to the end of current line|
-|Ctrl+Y|Moves to the begin of file|
-|Ctrl+V|Moves to the end of file|  
+|Ctrl+A|Moves to the beginning of the current line|
+|Ctrl+E|Moves to the end of the current line|
+|Ctrl+Y|Moves to the beginning of the file|
+|Ctrl+V|Moves to the end of the file|  
 
 ### Copying and pasting  
 In Nano, the first step before copying a text is to enter the Mark mode, which is the mode where you will highlight the text to be copied. Use the shortcut `Ctrl`+`^` to turn on/off the Mark mode, which will be informed by Nano with a "Mark Set"/"Mark Unset" message:  
@@ -55,7 +55,7 @@ Once Mark mode is on, you can highlight the text to be copied. Notice that the l
 
 ![](/images/nano_06.PNG)
 
-Then, to copy the marked text, use the shortcut `Meta`+`^` or `Meta`+`6`, where *Meta* usually is the `Alt` key on most keyboards. If otherwise you want to cut the marked text, use the shortcut `Ctrl`+`K`
+Then, to copy the marked text, use the shortcut `Meta`+`^` or `Meta`+`6`, where *Meta* is usually the `Alt` key on most keyboards. If instead you want to cut the marked text, use the shortcut `Ctrl`+`K`
 
 Finally, use the shortcut `Ctrl`+`U` to paste the text:  
 
@@ -66,7 +66,7 @@ Use the shortcut `Ctrl`+`W` to search for a string. It will open a Search box wh
 
 ![](/images/nano_08.PNG)  
 
-If you want to replace a string by another, use the command `Ctrl`+`\`. It will first open a box where you need to type in the text that will be replaced:  
+If you want to replace one string with another, use the command `Ctrl`+`\`. It will first open a box where you need to type in the text that will be replaced:  
 
 ![](/images/nano_09.PNG)  
 

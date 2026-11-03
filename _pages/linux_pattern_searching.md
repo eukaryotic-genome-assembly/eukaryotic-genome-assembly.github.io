@@ -51,7 +51,7 @@ The `?` wildcard represents a single character. For example, it can be used to l
 username@bash:~/wildcards_test$ ls ?a*   
 carol.txt
 ``` 
-Or even to list all files whose extension have three characters:  
+Or even to list all files whose extension has three characters:  
 ```bash  
 username@bash:~/wildcards_test$ ls *.???   
 carol.txt blah.txt firstfile.txt
@@ -60,7 +60,7 @@ carol.txt blah.txt firstfile.txt
 ### The `[]` wildcard 
 Finally, as opposed to `*` and `?`, which refer to **any** character, the range operator `[]` allows us to search for a specific subset of characters.  
 
-For instance, if we wanted to list all files that begin the the letter *c* or *f*:  
+For instance, if we wanted to list all files that begin with the letter *c* or *f*:  
 ```bash  
 username@bash:~/wildcards_test$ ls [cf]*   
 carol.txt firstfile.txt
@@ -73,7 +73,7 @@ number2file
 ``` 
 
 ## Searching inside files with `grep`  
-The command `grep` is used to search for patterns inside files, iterating over each line of it. Before start playing with it, let's create a directory named *grep_test* in our *home*, move from our current working directory (*wildcards_test*) to there and copy an example file called *grep_test.txt* to *grep_test*:  
+The command `grep` is used to search for patterns inside files, iterating over each line of it. Before we start playing with it, let's create a directory named *grep_test* in our *home*, move from our current working directory (*wildcards_test*) to there and copy an example file called *grep_test.txt* to *grep_test*:  
 ```bash  
 username@bash:~/wildcards_test$ mkdir ~/grep_test  
 username@bash:~/wildcards_test$ cd ~/grep_test  

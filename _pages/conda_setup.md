@@ -7,15 +7,15 @@ permalink: /conda_setup/
 
 ![](/images/conda_logo.svg)
 
-Conda is a package and environment management system. As a package management system, Conda allows us to quickly install, run and update programs and their dependencies. As an environment management, Conda allows us to easily switch and export environments, where one or a set of softwares are installed and ready to be used. 
+Conda is a package and environment management system. As a package management system, Conda allows us to quickly install, run and update programs and their dependencies. As an environment management system, Conda allows us to easily switch and export environments, where one or a set of software packages are installed and ready to be used. 
 
 ![](/images/conda_system.png)
 
-We encourage you to [read more](https://docs.conda.io/en/latest/) about Conda and use it as a management system for your work besides this course. Here, the only thing you need to know is that the instructors have already set up a Conda environment containing most of the softwares that will be used through this workshop. The job left for you was to initialize conda for your own user and activate the workshop environment.  
+We encourage you to [read more](https://docs.conda.io/en/latest/) about Conda and use it as a management system for your work beyond this course. Here, the only thing you need to know is that the instructors have already set up a Conda environment containing most of the software that will be used through this workshop. The job left for you is to initialize conda for your own user and activate the workshop environment.  
 
 ### Setting up Conda for this course
 
-Since this is the first time you are running conda with your user, you need to initilize conda:
+Since this is the first time you are running conda with your user, you need to initialize conda:
 
 ```bash 
 user@bash:~$ conda init  

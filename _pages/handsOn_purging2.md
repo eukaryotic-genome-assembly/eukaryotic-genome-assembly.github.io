@@ -6,7 +6,7 @@ permalink: /handsOn_purging2/
 
 # Part 3.2 - Purging and Merqury drUrtUren1
 
-Ok, today you learned about Purge Dups and purging assemblies. You also learned that Hifiasm and other assemblers are not perfect in separating haplotypes of diploid species, and then many times the primary assembly retains haplotigs, and that this redanduncy is not real and must be removed before assemblies are scaffolded. Later, you learned how to evaluate assembly completeness and quality having a look at the shared kmers between the assembly and high-quality reads kmers, such as Illumina or PacBio HiFi. Now you are going to run merqury to evaluate assemblies for your species!
+Ok, today you learned about Purge Dups and purging assemblies. You also learned that Hifiasm and other assemblers are not perfect in separating haplotypes of diploid species, and then many times the primary assembly retains haplotigs, and that this redundancy is not real and must be removed before assemblies are scaffolded. Later, you learned how to evaluate assembly completeness and quality having a look at the shared kmers between the assembly and high-quality reads kmers, such as Illumina or PacBio HiFi. Now you are going to run merqury to evaluate assemblies for your species!
 
 All right, earlier today you have assembled a subset of reads for your species, but you have generated statistics for hifiasm drUrtUren1.hifiasm.total.p_ctg.fa.gz and drUrtUren1.hifiasm.total.a_ctg.fa.gz assemblies that I have generated previously. These assemblies are the files you are going to work on right now. So I would like you to create a directory called `merqury_hifiasm_eval` inside your home species directory (`~/<species_folder>/`), move there and create a symlink to the Hifiasm assembly files: 
 
@@ -18,13 +18,13 @@ ln -s /home/ubuntu/Share/<species_id>_data/drUrtUren1.hifiasm.total.a_ctg.fa.gz
 ```  
 
 
-Right, so in order to run merqury, you need a meryl datase of the reads you want to compare kmers with the kmers in your assembly. In our case, I have created meryl databases for Pacbio HiFi reads for your species, and you just need to symlink the meryl db folder to your execution folder. So you do:
+Right, so in order to run merqury, you need a meryl database of the reads you want to compare kmers with the kmers in your assembly. In our case, I have created meryl databases for Pacbio HiFi reads for your species, and you just need to symlink the meryl db folder to your execution folder. So you do:
 
 ```console  
 ln -s /home/ubuntu/Share/<species_id>_data/drUrtUren1.pacbio.k21.meryl/
 ```  
 
-Now, let’s run merqury! For that, you need to activate the merqury enviroment:
+Now, let’s run merqury! For that, you need to activate the merqury environment:
 
 ```console  
 conda activate merqury_env
@@ -46,7 +46,7 @@ Great!!
 
 ## This will take a while to run. During this time...
 
-You are going to gather the results and evaluate the purged version of your species Hifiasm assembly. We don't have time to run [Purge_dups](https://github.com/dfguan/purge_dups) here, but the **most important** thing is to learn how to interpret the results after purge_dups is done. So, João and I have generated for you the (i) purged assebmlies, (ii) the merqury and the (iii) BUSCO results.
+You are going to gather the results and evaluate the purged version of your species Hifiasm assembly. We don't have time to run [Purge_dups](https://github.com/dfguan/purge_dups) here, but the **most important** thing is to learn how to interpret the results after purge_dups is done. So, João and I have generated for you the (i) purged assemblies, (ii) the merqury and the (iii) BUSCO results.
 
 1-) First thing you need to do is to symlink the purged assemblies and calculate the general statistics for the primary and haplotigs files. Let's create a new directory to save the purged results and create the symlinks there:
 
@@ -73,7 +73,7 @@ asmstats purged.htigs.fa.gz > purged.htigs.fa.gz.stats
 
 Great!
 
-2-) Now, I want you to take a look and take notes of the BUSCO results **before** and **after** purging for the Hifiasm drUrtUren1.hifiasm.total.p_ctg.fa.gz and drUrtUren1.hifiasm.total.a_ctg.fa.gz assembly. The short short_summary.txt is the file you should look at. You can do that by using the `less` command:
+2-) Now, I want you to take a look and take notes of the BUSCO results **before** and **after** purging for the Hifiasm drUrtUren1.hifiasm.total.p_ctg.fa.gz and drUrtUren1.hifiasm.total.a_ctg.fa.gz assembly. The `short_summary.txt` file is the one you should look at. You can do that by using the `less` command:
 
 before purging:
 
@@ -107,7 +107,7 @@ For the plot files, you will have 3 types: st (stacked), ln (line) and fl (fille
 they are just a different way of plotting the (same) data. For further information I recommend having a look at the manual [here](https://github.com/marbl/merqury/wiki/2.-Overall-k-mer-evaluation).
    
 # Attention
-Apart from having st, fn and ln, merqury is going to output 2 types of files, *asm* and *cn*. If the file contains *cn* it's going to show you all kmer counts of primary + haplotigs in the plot, without descriminating them. Ff it contains *asm* it is going to show you kmers belonging to each assembly in different colours. 
+Apart from having st, fn and ln, merqury is going to output 2 types of files, *asm* and *cn*. If the file contains *cn* it's going to show you all kmer counts of primary + haplotigs in the plot, without discriminating them. If it contains *asm* it is going to show you kmers belonging to each assembly in different colours. 
 
 DEEP BREATH.
 
@@ -116,9 +116,9 @@ You are going to get it! (It just takes time!).
 Didn't get it yet? Discuss it with your group on zoom!
      
 What you need to do with the purging merqury results is:
-Now I want you to take a look at some relevant Merqury files. The text files can be open with the `less` command, while you will need to download the plot files (*.png) to your local machine in order to actually open them. 
+Now I want you to take a look at some relevant Merqury files. The text files can be opened with the `less` command, while you will need to download the plot files (*.png) to your local machine in order to actually open them. 
   
-  3-) Gather the spectra plots for the primary purged assembly. They will be called `purged.purged.spectra-cn*.png` (notice that the `*` represents the different files we have: `st`, `ln` and `st`)
+  3-) Gather the spectra plots for the primary purged assembly. They will be called `purged.purged.spectra-cn*.png` (notice that the `*` represents the different files we have: `st`, `ln` and `fl`)
   
   4-) Gather the spectra plots for the haplotigs purged assembly. It will be called `purged.purged.htigs.spectra-cn*.png`
   
@@ -160,12 +160,12 @@ For the purged run, the qv and completeness result for the purged and htigs asse
   
  # Now  
   
-  I don't know if you realised, but you have for now (i) ran kmer analyses to understand the DNA composition of your reads, (ii) you have ran two genome assemblers and you are learning how to (iii) interprete the BUSCO run results and how to run (iv) and interpret (v) kmer assembly evaluation results with merqury! THIS IS A LOT FOR THREE DAYS! Really well done! Now its time to gather all of the results and answer the following questions with your team and later on we will go through them together as a group.
+  I don't know if you realised, but you have for now (i) ran kmer analyses to understand the DNA composition of your reads, (ii) you have run two genome assemblers and you are learning how to (iii) interpret the BUSCO run results and how to run (iv) and interpret (v) kmer assembly evaluation results with merqury! THIS IS A LOT FOR THREE DAYS! Really well done! Now it's time to gather all of the results and answer the following questions with your team and later on we will go through them together as a group.
   
   
   a-) What has happened with the assembly general statistics after it was purged?
   
-  b-) After purging, what the files purged and htigs mean?
+  b-) After purging, what do the files purged and htigs mean?
   
   c-) How is the BUSCO duplication before purging?
   
@@ -173,7 +173,7 @@ For the purged run, the qv and completeness result for the purged and htigs asse
   
   e-) What are all the QVs of the assemblies? Are they good QVs? 
   
-  f-) What a QV of 50 means?
+  f-) What does a QV of 50 mean?
   
   Well done! Let's come back to the group all together now!
  

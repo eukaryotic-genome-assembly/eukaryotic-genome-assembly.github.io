@@ -5,7 +5,7 @@ permalink: /linux_other_things/
 ---  
 
 ## Linux is case sensitive  
-As opposed to Windows, Linux systems are case sensitive, what means they can differentiate between two files that have the same name but written with characters in different (lower vs. upper) cases. For instance, inside a directory one can have three different files called example.txt:  
+As opposed to Windows, Linux systems are case sensitive, which means they can differentiate between two files that have the same name but written with characters in different (lower vs. upper) cases. For instance, inside a directory one can have three different files called example.txt:  
 ```console  
 user@bash:~$ ls  
 EXAMPLE.txt example.txt Example.txt
@@ -33,4 +33,4 @@ user@bash:~$ pwd
 ```  
 
 ## Further reading <a name="additional-references"></a>  
-This tutorial was inspired by the great [Ryan Chadwick's webpage](https://ryanstutorials.net/linuxtutorial/) on Linux. If you want to deepen your understanding on Linux, I highly recommend you to browse through Ryan's tutorial, which includes exercises and some other interesting topics not coverede here due to time constraints.
+This tutorial was inspired by the great [Ryan Chadwick's webpage](https://ryanstutorials.net/linuxtutorial/) on Linux. If you want to deepen your understanding of Linux, I highly recommend that you browse through Ryan's tutorial, which includes exercises and some other interesting topics not covered here due to time constraints.

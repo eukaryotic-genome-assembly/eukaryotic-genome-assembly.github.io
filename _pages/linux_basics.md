@@ -8,7 +8,7 @@ permalink: /linux_basics/
 The terminal, or command line, is an interface that allows you to interact with the system through text. It allows the user to run functions or programs, open and browse through directories, see the processes that are currently running, among other things.  
 
 ## The prompt <a name="the-prompt"></a> 
-When you open the terminal, you will see something that looks like this (the exactly text may change depending on the system you are using, but they should all look similar):  
+When you open the terminal, you will see something that looks like this (the exact text may change depending on the system you are using, but they should all look similar):  
 
 ```console  
 user@bash:~$ 

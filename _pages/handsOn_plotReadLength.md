@@ -29,10 +29,10 @@ python plot_fasta_length.py <species>.ccs.total.fasta.gz <species>.ccs.total.fas
 This might take a bit of time. So if you prefer, you can use tools such as `nohup` or `screen` to run the process in the background (e.g. `nohup <command> &`).
 
 > Note: 
-> My script `plot_fasta_length.py` and also Shane’s script `asmstats` are two of many options you can use to plot fasta lengths and generate statistics. Remember, internet is on your side in this journey. While you wait the script to run, have a look at other options: [like this one](https://bioinformatics.stackexchange.com/questions/45/read-length-distribution-from-fasta-file) or the stats from [BBMap](https://github.com/BioInfoTools/BBMap)  
+> My script `plot_fasta_length.py` and also Shane’s script `asmstats` are two of many options you can use to plot fasta lengths and generate statistics. Remember, the internet is on your side in this journey. While you wait for the script to run, have a look at other options: [like this one](https://bioinformatics.stackexchange.com/questions/45/read-length-distribution-from-fasta-file) or the stats from [BBMap](https://github.com/BioInfoTools/BBMap)  
 
-Once you have plotted the reads length distribution, download it to your local computer and have a look.  
-a- How does the reads distribution look like?  
-b- Which length most of the reads have?  
+Once you have plotted the read length distribution, download it to your local computer and have a look.  
+a- What does the read length distribution look like?  
+b- What length do most of the reads have?  
 
 Now, gather all the results you have so far and let’s discuss them as a group!!

@@ -10,7 +10,7 @@ The command **pwd** stands for *Print Working Directory* and it will print the c
 username@bash:~$ pwd  
 /home/username
 ```  
-This is your home directory. In Linux systems, each user has its own home directories, where they will be saving their own files.  
+This is your home directory. In Linux systems, each user has their own home directory, where they will be saving their own files.  
 
 ## Creating a directory <a name="creating-a-directory"></a>  
 You can create a directory using the command **mkdir** (which stands for *Make Directory*):  
@@ -61,7 +61,7 @@ The idea behind relative paths is that **cd** knows what our current directory i
 
 While *absolute paths* start with a forward slash (/), *relative paths* don't. 
 
-Of couse the **cd** command would also have worked if we had used an *absolute path* instead: 
+Of course the **cd** command would also have worked if we had used an *absolute path* instead: 
 ```console  
 username@bash:~$ cd /home/username/linux_tutorial
 username@bash:~$ pwd  
@@ -101,6 +101,6 @@ linux_tutorial
 ```  
 
 ## The tab completion trick <a name="the-tab-completion-trick"></a>  
-Typing out long paths can be tedious and slow, without mentioning the chances of typing errors (typos). However, the command line have a powerfull mechanism to help us with that: it's called **tab completion**.  
+Typing out long paths can be tedious and slow, without mentioning the chances of typing errors (typos). However, the command line has a powerful mechanism to help us with that: it's called **tab completion**.  
 
-The idea is that whenever you start typing a path, if you hit the Tab key on your keyboard the command line will invoke an autocompletion action. It nothing happens, it means there are several possibilities for autocompletion. In that case you should hit Tab again to show all the possibilites, continue typing and then hit Tab again to continue the autocompletion process. Try it yourself to seed the power of tab completion!
+The idea is that whenever you start typing a path, if you hit the Tab key on your keyboard the command line will invoke an autocompletion action. If nothing happens, it means there are several possibilities for autocompletion. In that case you should hit Tab again to show all the possibilities, continue typing and then hit Tab again to continue the autocompletion process. Try it yourself to see the power of tab completion!

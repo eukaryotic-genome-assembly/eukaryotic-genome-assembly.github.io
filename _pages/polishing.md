@@ -13,9 +13,9 @@ conda activate eukaryotic_genome_assembly
 
 # Polishing CLR assembly
 
-Ok, we have talked a little about polishing and how much polishing is still vital if you are working with PacBio CLR reads, that can have up to 15% of errors. Now, you are going to investigate the impacts of polishing on the *Hemaris fuciformis* genome, that was assembled with PacBio CLR reads as part of the [25 Genomes Project of the Sanger Institute](https://www.sanger.ac.uk/collaboration/25-genomes-for-25-years/)  
+Ok, we have talked a little about polishing and how much polishing is still vital if you are working with PacBio CLR reads, which can have up to 15% of errors. Now, you are going to investigate the impacts of polishing on the *Hemaris fuciformis* genome, which was assembled with PacBio CLR reads as part of the [25 Genomes Project of the Sanger Institute](https://www.sanger.ac.uk/collaboration/25-genomes-for-25-years/)  
 
-For such, you are going to compare some statistics for *H. fuciforms* **before** and **after polishing** after polishing, which has been done by the [GRIT](https://www.sanger.ac.uk/group/genome-reference-informatics-team/) Team at the Sanger Institute. All the files you will need are in `/home/ubuntu/Share/iHemFuc1_data` subdirectories. The stats I want you to compare are: 
+For this, you are going to compare some statistics for *H. fuciformis* **before** and **after polishing**, which has been done by the [GRIT](https://www.sanger.ac.uk/group/genome-reference-informatics-team/) Team at the Sanger Institute. All the files you will need are in `/home/ubuntu/Share/iHemFuc1_data` subdirectories. The stats I want you to compare are: 
 
 * Merqury completeness and QV
     * Merqury has been run in advance by your instructors, so here you just need to collect the data.    
@@ -38,11 +38,11 @@ Now look at all the results and answer:
 
 1. What were the general statistics (number of scaffolds, total assembled size, N50) for before and after polishing?
 
-2. Has the QVs improved with polishing?
+2. Have the QVs improved with polishing?
 
 3. Putting one of each spectra plots for before and after polishing side by side in a slide, where can you see in the plot the evidence for the change in QV? (Look at kmers around 0).
 
-4. Has BUSCO changed before and after-polishing?
+4. Has BUSCO changed before and after polishing?
 
 Make one slide with all the information you have analysed here.
 

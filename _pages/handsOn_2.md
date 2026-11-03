@@ -19,7 +19,7 @@ Have a look at their websites:
 Now let’s run the assembly on our subsamples.
 
 
-First, make sure you are in your species directory that you created at your home directory in our first hands-on tutorial (`~/<species_folder>/`, e.g. `~/v_atalanta/`). Then let’s create a directory for each assembly we are going to run, as both assemblers create a lot of different outputs:
+First, make sure you are in your species directory that you created in your home directory in our first hands-on tutorial (`~/<species_folder>/`, e.g. `~/v_atalanta/`). Then let’s create a directory for each assembly we are going to run, as both assemblers create a lot of different outputs:
 
 ```console  
 mkdir hicanu
@@ -39,7 +39,7 @@ cd hicanu
 export PATH=/home/ubuntu/Share/softwares/canu-2.2/bin:$PATH 
 ```
 
-In the `export` command, what you are doing is adding the directory where the HiCanu software is installed to an environment variable named PATH. The PATH variable defines a set of directories where the operating system will search for executable files in order to run the softwares. Since we've added HiCanu directory to the PATH, now we should be able to run it by directly calling the HiCanu executable (`canu`), with no need to type the whole path to the executable file (`/home/ubuntu/Share/softwares/canu-2.2/bin/canu`). 
+In the `export` command, what you are doing is adding the directory where the HiCanu software is installed to an environment variable named PATH. The PATH variable defines a set of directories where the operating system will search for executable files in order to run the software. Since we've added HiCanu directory to the PATH, now we should be able to run it by directly calling the HiCanu executable (`canu`), with no need to type the whole path to the executable file (`/home/ubuntu/Share/softwares/canu-2.2/bin/canu`). 
 
 Now please test if you can run canu:
 
@@ -47,18 +47,18 @@ Now please test if you can run canu:
 canu
 ```  
 
-This will print you all the parameters that one can use to run canu. 
+This will print all the parameters that one can use to run canu. 
 
 Then, create a symlink to the subsample read dataset and 
 
-1-) run the bellow for ilVanAtal1 and ilNotDrom1:
+1-) run the commands below for ilVanAtal1 and ilNotDrom1:
 
 ```console  
 ln -s /home/ubuntu/Share/<species_id>_data/<species_id>.600.fasta
 canu -d run1 -p <species_id> genomeSize=16000 -pacbio-hifi <species_id>.600.fasta useGrid=false corThreads=2
 ```  
 
-2-) run the bellow for drUrtUren1:
+2-) run the commands below for drUrtUren1:
 
 ```console  
 ln -s /home/ubuntu/Share/<species_id>_data/<species_id>.600.fasta
@@ -116,7 +116,7 @@ If not, then I need to change there. Now, list the contents of `hifiasm` directo
 ls -ltrh  
 ```
 
-Among the results hifiasm produce, you will find the `<prefix>.p_ctg.gfa` file (remember that the prefix has been defined using the `-o` option when running Hifiasm). This is our assembly output file. Hifiasm gives us the [assembly graph](http://gfa-spec.github.io/GFA-spec/GFA1.html) as an output. This means you need to convert the graph into a fasta file. For that, we have an awk script named `gfa2fa`.
+Among the results hifiasm produces, you will find the `<prefix>.p_ctg.gfa` file (remember that the prefix has been defined using the `-o` option when running Hifiasm). This is our assembly output file. Hifiasm gives us the [assembly graph](http://gfa-spec.github.io/GFA-spec/GFA1.html) as an output. This means you need to convert the graph into a fasta file. For that, we have an awk script named `gfa2fa`.
 
 Add the directory containing that script to the PATH and run it:
 
@@ -142,7 +142,7 @@ cd ~/<species_folder>/hicanu/run1/
 ls -ltrh
 ```
 
-Differently than Hifiasm, Hicanu is going to give you a fasta file at the end. It’s called * *.contigs.fasta.* So, go on and generate the statistics for this result:
+Unlike Hifiasm, Hicanu is going to give you a fasta file at the end. It’s called * *.contigs.fasta.* So, go on and generate the statistics for this result:
 
 ```console  
 asmstats <prefix>.contigs.fasta > <prefix>.contigs.fasta.stats

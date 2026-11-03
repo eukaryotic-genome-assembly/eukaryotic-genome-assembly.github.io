@@ -9,7 +9,7 @@ Ok, so you have learned a lot of things about Hi-C scaffolding and (a bit on) ge
 
 The name of the guy you are going to be working with is *Eristalis pertinax* (who am I? Check me online and get a picture of me). In the folder `/home/ubuntu/Share/idEriPert2/` you are going to find:
 
-- salsa_scaffolds.hic - ths is the Hi-C HeatMap you are going to load on JuiceBox
+- salsa_scaffolds.hic - this is the Hi-C HeatMap you are going to load on JuiceBox
 - scaffold_1.fa       - this is the fasta sequence for scaffold_1 that you are going to look at in IGV
 - scaffold_1.fa.fai   - This is the index of scaffold_1
 - scaffold_1.bam      - This is the bam file of scaffold_1, it contains information of PacBio reads mapped back to it
@@ -39,7 +39,7 @@ CONTIG  N100 = 9583, L100 = 572
 GAP     sum = 95500, n = 191, ave = 500, largest = 500, smallest = 500
 ```
 
-Now, I want you to open the Hi-C heat map (`salsa_scaffolds.hic`) for the complete genome on Juicebox and have a look a it.
+Now, I want you to open the Hi-C heat map (`salsa_scaffolds.hic`) for the complete genome on Juicebox and have a look at it.
 
 The whole plot is not amazing. But do you think you see a miss-assembly on scaffold 1?
 
@@ -55,9 +55,9 @@ Then, using the `Go` search bar (like in the image below), go to the position: `
 
 Do you see a gap in the Pacbio coverage?
 
-Aha! If you have a weird looking Hi-C HeatMap and NO reads crossing that regiong, I bet you that this is a miss-assembly!! Don't you? :wink:
+Aha! If you have a weird looking Hi-C HeatMap and NO reads crossing that region, I bet you that this is a miss-assembly!! Don't you think? :wink:
 
 #### (optional) Saving regions of interest
 IGV allows us to highlight regions of interest through the `Region Navigator` tool. To save the region that has no coverage, you first need to make sure that IGV is displaying that region (you can type the position `scaffold_1:56,972,207-56,977,386` in the search bar again). Then, on the top panel of IGV click on `Regions > Region Navigator...`. All you need to do now is to click on the `Add` button and your region will be added to the Region Navigator list. You can even give a description to your region (e.g. `drop in coverage`).
 
-After saving your region(s) of interest(s), you can zoom-out and browse through the whole sequence in IGV and your region will always be highlighted (in red). 
+After saving your region(s) of interest, you can zoom out and browse through the whole sequence in IGV and your region will always be highlighted (in red). 

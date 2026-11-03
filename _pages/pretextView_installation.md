@@ -6,7 +6,7 @@ permalink: /pretextView_installation/
 
 ### PretextView 
 
-Just like for the IGV, every participant needs to install PretextView in its own personal computer. Follow these steps to install it in your machine:  
+Just like IGV, every participant needs to install PretextView on their own personal computer. Follow these steps to install it on your machine:  
 
 1. Using [this link](https://github.com/wtsi-hpag/PretextView/releases), download the latest release of the PretextView prebuilt app. Be careful to choose the file that is compatible with your operating system (*PretextView-<MacOS/Linux/Windows>.zip*).  
     ![](/images/pretext_view_01.PNG)

@@ -5,7 +5,7 @@ permalink: /
 
 ![](/images/other/home_sloth.jpg)
 
-Welcome to the [Physalia](https://www.physalia-courses.org/) November 2026 course run by Marcela Uliano-Silva & João Ferreira.
+Welcome to the [Physalia](https://www.physalia-courses.org/) November 2026 course run by [Marcela Uliano-Silva & João Ferreira](/about/).
 
 Follow the links on the left-hand side to take part in the course modules.
 

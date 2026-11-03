@@ -19,7 +19,7 @@ locale                   : "en-US"
 title                    : "Eukaryotic Genome Assembly Using PacBio and Hi-C"
 title_separator          : "|"
 name                     : "Marcela Uliano & João Ferreira"
-description              : "Physalia course, November 2020"
+description              : "Physalia course, November 2026"
 url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : eukaryotic-genome-assembly/eukaryotic-genome-assembly.github.io
@@ -93,10 +93,10 @@ social:
 
 # Site Author
 author:
-  name             : "Your Name"
+  name             : "Marcela Uliano-Silva & João Ferreira"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an amazing person."
-  location         : "Somewhere"
+  bio              : "Instructors of the Physalia Eukaryotic Genome Assembly course."
+  location         : # "Somewhere"
   email            :
   links:
     - label: "Email"
@@ -113,7 +113,7 @@ author:
       # url: "https://facebook.com/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      # url: "https://github.com/"
+      url: "https://github.com/eukaryotic-genome-assembly"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       # url: "https://instagram.com/"

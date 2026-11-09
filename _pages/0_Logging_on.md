@@ -60,10 +60,6 @@ Copying files back on to our local machine is just as straightforward. If we wan
 scp -i ~/<user.pem> <user>@<ip.address>:~/test_file ./
 ```
 
-#### Making life a bit easier
-
-If you are logging in and copying from a cluster regularly, it is sometimes good to use an `ssh` alias. Because the cluster IP address changes every day, we will not be using these during the course. However, if you would like some information on how to set them up, see [here](https://markravinet.github.io/CEES_tips_&_tricks.html)
-
 ### Windows users
 
 #### Logging on

@@ -8,25 +8,6 @@ main:
     url: https://eukaryotic-genome-assembly.github.io/logging_on/
 
 pages:
-  - title: "Unix Tutorial"
-    children:
-      - title: "- Basic concepts"
-        url: /linux_basics/  
-      - title: "- Navigating the system"
-        url: /linux_navigation/
-      - title: "- Manipulating files"
-        url: /linux_file_manipulation/
-      - title: "- Text editor: nano"  
-        url: /nano/        
-      - title: "- Wildcards and pattern search"  
-        url: /linux_pattern_searching/
-      - title: "- Piping and redirection" 
-        url: /linux_pipe/
-      - title: "- Other things you should know"  
-        url: /linux_other_things/
-      - title: "- Fasta and Fastq sequences"
-        url: /fasta_fastq/  
-  
   - title: "Setting up the environment"
     children:
       - title: "- Installing IGV"

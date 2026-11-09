@@ -64,7 +64,7 @@ scp -i ~/<user.pem> <user>@<ip.address>:~/test_file ./
 
 #### Logging on
 
-If you are using a Windows machine, you will need to log on using [MobaXterm](http://mobaxterm.mobatek.net) since there is no native `ssh` client. After installing it, open MobaXterm and:
+If you are using a Windows machine, you will need to log on using [MobaXterm](https://mobaxterm.mobatek.net) since there is no native `ssh` client. After installing it, open MobaXterm and:
 
 1. Start a new SSH terminal (1&2).
 2. Add the host address (3) - which is the daily IP address - and your username (4) - e.g. `user2`

@@ -83,7 +83,7 @@ less /home/ubuntu/Share/<species_id>_data/run_drUrtUren1.hifiasm.p.busco_odb10/s
 ```
 haplotigs:
 ```
-less /home/ubuntu/Share/<species_id>_data/run_drUrtUren1.hifiasm.a.busco_odb10/short_summary.txt (running, copy when done)
+less /home/ubuntu/Share/<species_id>_data/run_drUrtUren1.hifiasm.a.busco_odb10/short_summary.txt
 ```
 after purging:  
 

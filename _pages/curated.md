@@ -20,6 +20,7 @@ v) You have learned how to scaffold genomes with Hi-C data and SALSA2
 
 vi) You have heard of genome polishing and curation
 
+Manual curation is beyond the scope of this course, but if you want a practical introduction to reading Hi-C maps for curation, see [Hi-C for Dummies](/pdf/HiC_Dummies_Guide.pdf) (and the [PretextView Tutorial](/pdf/PretextView-Tutorial.pdf) for the tool itself).
 
 Look at that! That is A LOT! WELL DONE! :clap: 
 

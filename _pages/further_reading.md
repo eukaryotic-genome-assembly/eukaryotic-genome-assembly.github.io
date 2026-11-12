@@ -68,6 +68,7 @@ First human genome
 
 * Grit Team video on Pretext and Hi-C [Video](https://youtu.be/3IL2Q4f3k3I) 
 * Hi-C for Dummies [Slides](/pdf/HiC_Dummies_Guide.pdf)
+* PretextView Tutorial [PDF](/pdf/PretextView-Tutorial.pdf)
 
 # Pipelines for genome assembly
 

@@ -92,7 +92,7 @@ Go to the Juicebox [website](https://www.aidenlab.org/juicebox/). Click on `Load
 Once you open Juicebox, click on `File > Open`. A new window will open, then you should click on the `Local...` button. Now you are ready to select the downloaded \*.hic file. Once you do it, the heatmap should be plotted. 
 
 ### Using PretextView
-After opening PretextView, click on the `Load Map` button and then select the downloaded \*.pretext file.
+After opening PretextView, click on the `Load Map` button and then select the downloaded \*.pretext file. If you need a guided tour of the tool, follow the [PretextView Tutorial](/pdf/PretextView-Tutorial.pdf).
 
 ## Now 
 Analyze all the results, discuss with your team and answer the questions in your presentation:

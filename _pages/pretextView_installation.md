@@ -12,3 +12,5 @@ Just like IGV, every participant needs to install PretextView on their own perso
     ![](/images/pretext_view_01.PNG)
 2. Once the download is done, you just need to unzip the downloaded file. 
 3. After unzipping, you will have an executable file called *PretextView.exe*, which you can double-click to open the PretextView software.
+
+For a more complete walkthrough of the PretextView interface and how to navigate Hi-C maps, see the [PretextView Tutorial (PDF)](/pdf/PretextView-Tutorial.pdf).

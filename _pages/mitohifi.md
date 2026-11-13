@@ -123,7 +123,7 @@ Your goal:
 
 ### Steps
 1. Create a new work directory and go to it  
-2. Locate the contigs you assembled in Part 2 (using either HiCanu or HiFiasm). You can either copy them to your working directory or create a symlink
+2. Locate the contigs you assembled in Part 2 (using either HiCanu or HiFiasm) and copy the file to your current work directory
 3. Find a reference mitogenome for your species
 4. Run `mitohifi.py` using your own contigs
 5. Explore your results. Check whether MitoHiFi produced:  
